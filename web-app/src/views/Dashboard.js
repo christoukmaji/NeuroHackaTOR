@@ -1,5 +1,7 @@
 import React from "react";
 import ChartistGraph from "react-chartist";
+import NotificationAlert from 'react-notification-alert';
+import "react-notification-alert/dist/animate.css";
 // react-bootstrap components
 import {
   Badge,
@@ -15,6 +17,7 @@ import {
   OverlayTrigger,
   Tooltip,
 } from "react-bootstrap";
+
 
 function Dashboard() {
   return (
@@ -34,6 +37,7 @@ function Dashboard() {
                     <div className="numbers">
                       <p className="card-category">Currently</p>
                       <Card.Title as="h4">FOCUSED</Card.Title>
+
                     </div>
                   </Col>
                 </Row>
@@ -53,7 +57,7 @@ function Dashboard() {
             <Card>
               <Card.Header>
                 <Card.Title as="h4">EEG Signals</Card.Title>
-                <p className="card-category">Per minute average for 10 minutes</p>
+                <p className="card-category">Per minute average for the last 10 minutes</p>
               </Card.Header>
               <Card.Body>
                 <div className="ct-chart" id="chartHours">
@@ -72,9 +76,9 @@ function Dashboard() {
                         "10",
                       ],
                       series: [
-                        [287, 124, 153, 385, 490, 492, 554, 586, 698, 695],
-                        [2, 115, 412, 231, 356, 635, 345, 543, 15, 123],
-                        [712, 841, 321, 871, 264, 413, 652, 521, 123, 421],
+                        [287, 124, 153, 385, 490, 492, 554, 586, 769,695],
+                        [234, 115, 412, 231, 356, 635, 345, 543, 15,123],
+                        [712, 841, 321, 71, 264, 413, 652, 521, 123,421],
                       ],
                     }}
                     type="Line"
@@ -121,7 +125,7 @@ function Dashboard() {
                 <hr></hr>
                 <div className="stats">
                   <i className="fas fa-history"></i>
-                  Updated 1 minute ago
+                  Updated now
                 </div>
               </Card.Footer>
             </Card>
