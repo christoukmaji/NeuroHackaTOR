@@ -27,7 +27,7 @@ import Upgrade from "views/Upgrade.js";
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    name: "ProjectName",
+    name: "DeepFlow",
     icon: "nc-icon nc-chart-pie-35",
     component: Dashboard,
     layout: "/admin",

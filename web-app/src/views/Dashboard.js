@@ -42,7 +42,7 @@ function Dashboard() {
                 <hr></hr>
                 <div className="stats">
                   <i className="fas fa-redo mr-1"></i>
-                  Update Now
+                  Updated Now
                 </div>
               </Card.Footer>
             </Card>
@@ -52,8 +52,8 @@ function Dashboard() {
           <Col md="8">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">EEG Level</Card.Title>
-                <p className="card-category">24 Hours performance</p>
+                <Card.Title as="h4">EEG Signals</Card.Title>
+                <p className="card-category">Per minute average for 10 minutes</p>
               </Card.Header>
               <Card.Body>
                 <div className="ct-chart" id="chartHours">
@@ -68,9 +68,13 @@ function Dashboard() {
                         "6",
                         "7",
                         "8",
+                        "9",
+                        "10",
                       ],
                       series: [
-                        [287, 385, 490, 492, 554, 586, 698, 695],
+                        [287, 124, 153, 385, 490, 492, 554, 586, 698, 695],
+                        [2, 115, 412, 231, 356, 635, 345, 543, 15, 123],
+                        [712, 841, 321, 871, 264, 413, 652, 521, 123, 421],
                       ],
                     }}
                     type="Line"
@@ -108,12 +112,16 @@ function Dashboard() {
               <Card.Footer>
                 <div className="legend">
                   <i className="fas fa-circle text-info"></i>
-                  ...
+                  Alpha
+                  <i className="fas fa-circle text-danger"></i>
+                  Beta 
+                  <i className="fas fa-circle text-warning"></i>
+                  Gamma
                 </div>
                 <hr></hr>
                 <div className="stats">
                   <i className="fas fa-history"></i>
-                  Updated 3 minutes ago
+                  Updated 1 minute ago
                 </div>
               </Card.Footer>
             </Card>
