@@ -1,9 +1,9 @@
 # DeepFlow
 ![DeepFlow UI](https://cdn.discordapp.com/attachments/843207003173421059/845914273426178058/unknown.png)
 ## Description
-Our project aims to help students adjust to a new medium of learning with the necessary tools. 
-By looking at brain waves associated with focus levels, we can improve concentration which in 
-turn enhances the online learning experience.
+Our project aims to help students, especially those in high school and college, adjust to a new medium of learning
+with the necessary tools. By looking at brain waves associated with focus levels, we can improve concentration, which
+in turn enhances the online learning experience.
 
 ## The Struggles of E-Learning
 Since the beginning of the pandemic, millions of students have moved to online learning.
